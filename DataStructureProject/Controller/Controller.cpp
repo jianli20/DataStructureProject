@@ -7,3 +7,10 @@
 //
 
 #include "Controller.hpp"
+
+using namespace std;
+
+void Controller :: start()
+{
+    
+}
