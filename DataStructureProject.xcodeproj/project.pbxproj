@@ -11,6 +11,7 @@
 		CA9A14D0202243990047F808 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA9A14CE202243990047F808 /* Controller.cpp */; };
 		CA9A14D5202246CE0047F808 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA9A14D3202246CE0047F808 /* Timer.cpp */; };
 		CA9A14DE20224EB10047F808 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA9A14DC20224EB10047F808 /* CrimeData.cpp */; };
+		CA9A14E220224F700047F808 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA9A14E020224F700047F808 /* FileController.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		CA9A14DB20224EB10047F808 /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		CA9A14DC20224EB10047F808 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		CA9A14DD20224EB10047F808 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
+		CA9A14E020224F700047F808 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
+		CA9A14E120224F700047F808 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				CA9A14D2202246AB0047F808 /* Tools */,
 				CA9A14CE202243990047F808 /* Controller.cpp */,
 				CA9A14CF202243990047F808 /* Controller.hpp */,
+				CA9A14E020224F700047F808 /* FileController.cpp */,
+				CA9A14E120224F700047F808 /* FileController.hpp */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 			files = (
 				CA9A14DE20224EB10047F808 /* CrimeData.cpp in Sources */,
 				CA9A14D5202246CE0047F808 /* Timer.cpp in Sources */,
+				CA9A14E220224F700047F808 /* FileController.cpp in Sources */,
 				CA9A14D0202243990047F808 /* Controller.cpp in Sources */,
 				CA9A14CD2022438D0047F808 /* Runner.cpp in Sources */,
 			);
