@@ -7,6 +7,7 @@
 //
 
 #include "FileController.hpp"
+#include "CrimeData.hpp"
 
 vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
 {
@@ -28,8 +29,11 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
             if (rowCount != 0)
             {
                 //Create a CrimeData instance from the line.
+                if(currentCVSLine.length() != 0)
+                {
                 CrimeData row(currentCVSLine);
                 crimeVector.push_back(row);
+                }
             }
             rowCount++;
         }
@@ -40,4 +44,6 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
         cerr << "NO FILE" << endl;
     }
     return crimeVector;
+    
+    
 }

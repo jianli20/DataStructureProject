@@ -81,10 +81,10 @@
 			isa = PBXGroup;
 			children = (
 				CA9A14D2202246AB0047F808 /* Tools */,
-				CA9A14CE202243990047F808 /* Controller.cpp */,
-				CA9A14CF202243990047F808 /* Controller.hpp */,
 				CA9A14E020224F700047F808 /* FileController.cpp */,
 				CA9A14E120224F700047F808 /* FileController.hpp */,
+				CA9A14CE202243990047F808 /* Controller.cpp */,
+				CA9A14CF202243990047F808 /* Controller.hpp */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

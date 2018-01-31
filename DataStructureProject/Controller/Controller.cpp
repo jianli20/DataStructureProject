@@ -20,7 +20,7 @@ void Controller :: start()
     codeTimer.displayInformation();
     codeTimer.resetTimer();
     codeTimer.startTimer();
-    for (int index = 0; index < 500000; index++)
+    for (int index = 0; index < 50000; index++)
     {
         cout << "Index is " << index << "\t";
     }
