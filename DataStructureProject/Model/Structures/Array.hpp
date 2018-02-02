@@ -25,7 +25,7 @@ public:
     Array<Type> (int size);
     
     //Copy Constructor
-    Array<Type> (const Array<Type> & toCopy);
+    Array<Type>(const Array<Type> & toCopy);
     //Destructor
     ~Array<Type>();
     
@@ -48,12 +48,12 @@ Array<Type> :: Array(int size)
     internalArray = new Type[size];
 }
 
-template <class <Type>
-Array<Type> :: Array(const Array<Type> & toCopy)
+template <class Type>
+Array<Type> :: Array(const Array<Type> & toCopy)
 {
     this->size = toCopy.getSize();
     
-    //Build Data Strcture
+    //Build Data Structure
     internalArray = new Type[size];
     
     for(int index = 0; index < size; index++)
