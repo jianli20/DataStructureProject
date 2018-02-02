@@ -23,13 +23,14 @@ void Controller :: start()
   
     vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/jli8189/Documents/C++/DataStructureProject/DataStructureProject/Data/crime.csv");
     
-    for (int index = 200; index < 216; index ++)
-    {
-        cout << index << " is " << myData[index] <<endl;
-    }
-    
-    codeTimer.stopTimer();
-    codeTimer.displayInformation();
+//    for (int index = 200; index < 216; index ++)
+//    {
+//        cout << index << " is " << myData[index] <<endl;
+//    }
+//
+//    codeTimer.stopTimer();
+//    codeTimer.displayInformation();
+    findMaxAndMin();
 }
 
 void Controller :: findMaxAndMin()
@@ -54,7 +55,7 @@ void Controller :: findMaxAndMin()
         }
     }
     searchTimer.stopTimer();
-    cout << "The smallest Crime stat is at " << minIndex << " and it is:" << myData[minIndex] << endl;
-    cout << "The largest Crime stat is at " << maxIndex << " and it is:" << myData[maxIndex] << endl;
+    cout << "The smallest Crime stat is at " << minIndex << " and it is: " << myData[minIndex] << endl;
+    cout << "The largest Crime stat is at " << maxIndex << " and it is: " << myData[maxIndex] << endl;
     searchTimer.displayInformation();
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA3518B82024EDF500F6D834 /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA3518B62024EDF500F6D834 /* Array.cpp */; };
 		CA9A14CD2022438D0047F808 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA9A14CC2022438D0047F808 /* Runner.cpp */; };
 		CA9A14D0202243990047F808 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA9A14CE202243990047F808 /* Controller.cpp */; };
 		CA9A14D5202246CE0047F808 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA9A14D3202246CE0047F808 /* Timer.cpp */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA3518B62024EDF500F6D834 /* Array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Array.cpp; sourceTree = "<group>"; };
+		CA3518B72024EDF500F6D834 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		CA9A14C22022434E0047F808 /* DataStructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9A14CC2022438D0047F808 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		CA9A14CE202243990047F808 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
@@ -51,6 +54,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA3518B42024ED5500F6D834 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA3518B52024EDDA00F6D834 /* Structures */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA3518B52024EDDA00F6D834 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				CA3518B62024EDF500F6D834 /* Array.cpp */,
+				CA3518B72024EDF500F6D834 /* Array.hpp */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
 		CA9A14B92022434E0047F808 = {
 			isa = PBXGroup;
 			children = (
@@ -70,9 +90,10 @@
 		CA9A14C42022434E0047F808 /* DataStructureProject */ = {
 			isa = PBXGroup;
 			children = (
-				CA9A14DA20224E730047F808 /* Data */,
-				CA9A14D12022442E0047F808 /* Controller */,
 				CA9A14CC2022438D0047F808 /* Runner.cpp */,
+				CA9A14D12022442E0047F808 /* Controller */,
+				CA9A14DA20224E730047F808 /* Data */,
+				CA3518B42024ED5500F6D834 /* Model */,
 			);
 			path = DataStructureProject;
 			sourceTree = "<group>";
@@ -170,6 +191,7 @@
 				CA9A14E220224F700047F808 /* FileController.cpp in Sources */,
 				CA9A14D0202243990047F808 /* Controller.cpp in Sources */,
 				CA9A14CD2022438D0047F808 /* Runner.cpp in Sources */,
+				CA3518B82024EDF500F6D834 /* Array.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
