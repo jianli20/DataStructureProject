@@ -12,9 +12,12 @@
 #include <iostream>
 #include <vector>
 #include "Tools/Timer.hpp"
+#include "FileController.hpp"
 
 class Controller
 {
+private:
+    void findMaxAndMin();
 public:
     void start();
 };

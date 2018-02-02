@@ -24,7 +24,7 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
         while (!dataFile.eof())
         {
             //Grab each line form the CSV separated by the carriage return character.
-            getline(dataFile, currentCVSLine, '\r');
+            getline(dataFile, currentCVSLine, '\n');
             //Exclude header row
             if (rowCount != 0)
             {
