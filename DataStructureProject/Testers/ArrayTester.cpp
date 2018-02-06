@@ -50,4 +50,8 @@ void ArrayTester :: testArrayUse()
     cout << thirdArray[5] << endl;
 }
 
+void ArrayTester :: testAdvancedArray()
+{
+    vector<CrimeData> test = FileController :: readCrimeDataToVector(/Users/jli8189/Documents/C++/DataStructureProject/DataStructureProject/Data/crime.csv)
+}
 #endif /* ArrayTester_hpp */
