@@ -6,20 +6,7 @@
 //  Copyright © 2018 CTEC. All rights reserved.
 //
 
-#ifndef FileController_hpp
-#define FileController_hpp
-
-#include <iostream>
-#include "../Model/Structures/Array.hpp"
-#include "../Controller/FileController.hpp"
-#include "../Controller/Tools/Timer.hpp"
-
-class ArrayTester
-{
-public:
-    void testArrayUse();
-    void testAdvancedArray();
-};
+#include "ArrayTester.hpp"
 
 void ArrayTester :: testArrayUse()
 {
@@ -52,6 +39,28 @@ void ArrayTester :: testArrayUse()
 
 void ArrayTester :: testAdvancedArray()
 {
-    vector<CrimeData> test = FileController :: readCrimeDataToVector(/Users/jli8189/Documents/C++/DataStructureProject/DataStructureProject/Data/crime.csv)
+    vector<CrimeData> test = FileController :: readCrimeDataToVector("/Users/jli8189/Documents/C++/DataStructureProject/DataStructureProject/Data/crime.csv");
+    int arraySize = test.size();
+    
+    Array<CrimeData> data(arraySize);
+    for (int index = 0; index < arraySize; index++)
+    {
+        data[index] = test[index];
+    }
+    
+    Timer vectorTimer;
+    Timer arrayTimer;
+    
+    vectorTimer.startTimer();
+    cout << test[3425] << endl;
+    vectorTimer.stopTimer();
+    vectorTimer.displayInformation();
+    
+    arrayTimer.startTimer();
+    cout << data[3425] << endl;
+    arrayTimer.stopTimer();
+    arrayTimer.displayInformation();
+    
 }
-#endif /* ArrayTester_hpp */
+
+
