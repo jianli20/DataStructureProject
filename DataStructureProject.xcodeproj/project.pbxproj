@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA3518B82024EDF500F6D834 /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA3518B62024EDF500F6D834 /* Array.cpp */; };
+		CA1DA46F202A33B60077CBAB /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA1DA46D202A33B60077CBAB /* ArrayTester.cpp */; };
 		CA9A14CD2022438D0047F808 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA9A14CC2022438D0047F808 /* Runner.cpp */; };
 		CA9A14D0202243990047F808 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA9A14CE202243990047F808 /* Controller.cpp */; };
 		CA9A14D5202246CE0047F808 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA9A14D3202246CE0047F808 /* Timer.cpp */; };
@@ -28,7 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CA3518B62024EDF500F6D834 /* Array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Array.cpp; sourceTree = "<group>"; };
+		CA1DA46D202A33B60077CBAB /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
+		CA1DA46E202A33B60077CBAB /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		CA3518B72024EDF500F6D834 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		CA9A14C22022434E0047F808 /* DataStructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9A14CC2022438D0047F808 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
@@ -54,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA1DA46C202A33830077CBAB /* Testers */ = {
+			isa = PBXGroup;
+			children = (
+				CA1DA46D202A33B60077CBAB /* ArrayTester.cpp */,
+				CA1DA46E202A33B60077CBAB /* ArrayTester.hpp */,
+			);
+			path = Testers;
+			sourceTree = "<group>";
+		};
 		CA3518B42024ED5500F6D834 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,7 +75,6 @@
 		CA3518B52024EDDA00F6D834 /* Structures */ = {
 			isa = PBXGroup;
 			children = (
-				CA3518B62024EDF500F6D834 /* Array.cpp */,
 				CA3518B72024EDF500F6D834 /* Array.hpp */,
 			);
 			path = Structures;
@@ -94,6 +103,7 @@
 				CA9A14D12022442E0047F808 /* Controller */,
 				CA9A14DA20224E730047F808 /* Data */,
 				CA3518B42024ED5500F6D834 /* Model */,
+				CA1DA46C202A33830077CBAB /* Testers */,
 			);
 			path = DataStructureProject;
 			sourceTree = "<group>";
@@ -190,8 +200,8 @@
 				CA9A14D5202246CE0047F808 /* Timer.cpp in Sources */,
 				CA9A14E220224F700047F808 /* FileController.cpp in Sources */,
 				CA9A14D0202243990047F808 /* Controller.cpp in Sources */,
+				CA1DA46F202A33B60077CBAB /* ArrayTester.cpp in Sources */,
 				CA9A14CD2022438D0047F808 /* Runner.cpp in Sources */,
-				CA3518B82024EDF500F6D834 /* Array.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

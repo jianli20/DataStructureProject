@@ -59,3 +59,15 @@ void Controller :: findMaxAndMin()
     cout << "The largest Crime stat is at " << maxIndex << " and it is: " << myData[maxIndex] << endl;
     searchTimer.displayInformation();
 }
+void Controller :: testArray()
+{
+    Array<int> jianArray(45);
+    
+    jianArray[0] = 123;
+    
+    cout << jianArray.getSize() << endl;
+    
+    
+    
+    
+}
