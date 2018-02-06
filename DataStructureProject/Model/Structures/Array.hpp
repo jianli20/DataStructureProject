@@ -76,7 +76,7 @@ Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
         if (size != toAssign.getSize())
         {
             delete [] internalArray;
-            size = toAssign.getSize90;
+            size = toAssign.getSize();
             internalArray = new Type [size];
         }
         
