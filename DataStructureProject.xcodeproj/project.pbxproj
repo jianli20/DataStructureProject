@@ -30,6 +30,8 @@
 /* Begin PBXFileReference section */
 		CA1DA46D202A33B60077CBAB /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		CA1DA46E202A33B60077CBAB /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
+		CA1DA473202A443C0077CBAB /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		CA1DA476202A46A30077CBAB /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		CA3518B72024EDF500F6D834 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		CA9A14C22022434E0047F808 /* DataStructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9A14CC2022438D0047F808 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
@@ -64,10 +66,27 @@
 			path = Testers;
 			sourceTree = "<group>";
 		};
+		CA1DA470202A41C70077CBAB /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Linear;
+			sourceTree = "<group>";
+		};
+		CA1DA471202A41D60077CBAB /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				CA1DA473202A443C0077CBAB /* Node.hpp */,
+				CA1DA476202A46A30077CBAB /* LinearNode.hpp */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
 		CA3518B42024ED5500F6D834 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				CA3518B52024EDDA00F6D834 /* Structures */,
+				CA1DA471202A41D60077CBAB /* Nodes */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -75,6 +94,7 @@
 		CA3518B52024EDDA00F6D834 /* Structures */ = {
 			isa = PBXGroup;
 			children = (
+				CA1DA470202A41C70077CBAB /* Linear */,
 				CA3518B72024EDF500F6D834 /* Array.hpp */,
 			);
 			path = Structures;
