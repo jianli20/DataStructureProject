@@ -44,6 +44,7 @@
 		CA9A14DD20224EB10047F808 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		CA9A14E020224F700047F808 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
 		CA9A14E120224F700047F808 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
+		CAC5E414202CE1A800B49CBA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +61,6 @@
 		CA1DA46C202A33830077CBAB /* Testers */ = {
 			isa = PBXGroup;
 			children = (
-				CA1DA46D202A33B60077CBAB /* ArrayTester.cpp */,
 				CA1DA46E202A33B60077CBAB /* ArrayTester.hpp */,
 			);
 			path = Testers;
@@ -96,6 +96,7 @@
 			children = (
 				CA1DA470202A41C70077CBAB /* Linear */,
 				CA3518B72024EDF500F6D834 /* Array.hpp */,
+				CAC5E414202CE1A800B49CBA /* List.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -105,6 +106,7 @@
 			children = (
 				CA9A14C42022434E0047F808 /* DataStructureProject */,
 				CA9A14C32022434E0047F808 /* Products */,
+				CA1DA46D202A33B60077CBAB /* ArrayTester.cpp */,
 			);
 			sourceTree = "<group>";
 		};
