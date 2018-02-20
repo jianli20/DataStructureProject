@@ -44,7 +44,8 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
         cerr << "NO FILE" << endl;
     }
     return crimeVector;
-    
+}
+
     LinkedList<CrimeData> FileController :: readDataToList(string fileName)
     {
         LinkedList<CrimeData> crimes;
@@ -72,7 +73,7 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
                         crimes.add(row);
                     }
                 }
-                rowCount++
+                rowCount++;
             }
             dataFile.close();
         }
@@ -83,4 +84,4 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
         
         return crimes;
     }
-}
+

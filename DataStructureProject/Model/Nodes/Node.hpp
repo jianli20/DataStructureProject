@@ -9,8 +9,6 @@
 #ifndef Node_hpp
 #define Node_hpp
 
-#include <stdio.h>
-
 template <class Type>
 class Node
 {
