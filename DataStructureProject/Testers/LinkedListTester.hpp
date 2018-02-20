@@ -1,5 +1,5 @@
 //
-//  LinkedListTester.hpp
+//  LinkedList.hpp
 //  DataStructureProject
 //
 //  Created by Li, Jian Hong on 2/20/18.
@@ -22,15 +22,4 @@ public:
     void testListWithData();
 };
 
-voiud LinkedListTester :: testListBasics()
-{
-    LinkedList<int> numbers;
-    numbers.add(9);
-    cout << numbers.getFront()->getData() << " Is it at the front of the list and should be 9" << endl;
-    cout << numbers.getEnd()->getData() << " Is at the end of the list and should be 9" << endl;
-    
-    number.add(0);
-    cout <<
-}
-
-#endif /* LinkedListTester_hpp */
+ LinkedList_hpp */

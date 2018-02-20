@@ -13,7 +13,7 @@
 		CA9A14D5202246CE0047F808 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA9A14D3202246CE0047F808 /* Timer.cpp */; };
 		CA9A14DE20224EB10047F808 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA9A14DC20224EB10047F808 /* CrimeData.cpp */; };
 		CA9A14E220224F700047F808 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA9A14E020224F700047F808 /* FileController.cpp */; };
-		CAD65634203CB8D70053A8B9 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CAD65632203CB8D70053A8B9 /* LinkedList.cpp */; };
+		CAD65634203CB8D70053A8B9 /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CAD65632203CB8D70053A8B9 /* LinkedListTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,8 +47,8 @@
 		CA9A14E120224F700047F808 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 		CAC5E414202CE1A800B49CBA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		CAD6562D203CA25B0053A8B9 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
-		CAD65632203CB8D70053A8B9 /* LinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
-		CAD65633203CB8D70053A8B9 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		CAD65632203CB8D70053A8B9 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
+		CAD65633203CB8D70053A8B9 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				CA1DA46E202A33B60077CBAB /* ArrayTester.hpp */,
-				CAD65632203CB8D70053A8B9 /* LinkedList.cpp */,
-				CAD65633203CB8D70053A8B9 /* LinkedList.hpp */,
+				CAD65632203CB8D70053A8B9 /* LinkedListTester.cpp */,
+				CAD65633203CB8D70053A8B9 /* LinkedListTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 				CA9A14D0202243990047F808 /* Controller.cpp in Sources */,
 				CA1DA46F202A33B60077CBAB /* ArrayTester.cpp in Sources */,
 				CA9A14CD2022438D0047F808 /* Runner.cpp in Sources */,
-				CAD65634203CB8D70053A8B9 /* LinkedList.cpp in Sources */,
+				CAD65634203CB8D70053A8B9 /* LinkedListTester.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
