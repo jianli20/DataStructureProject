@@ -36,6 +36,7 @@ public:
     Type remove(int index);
     // Type setAtIndex(int index, Type item);
     // bool contains(Type item);
+ };
     
     LinkedList<Type> :: LinkedList()
     {
@@ -73,7 +74,35 @@ public:
         this->size += 1;
     }
     
-    
+    void LinkedList<Type> :: addAtIndex(int index, Type item)
+    {
+        assert(index >= 0 && index <= this->size);
+        if(index == this->size)
+        {
+            add(item);
+        }
+        else
+        {
+            LienarNode<Type> * toBeAdded = new LinearNOde<Type>(item);
+            if (index == 0)
+            {
+                toBeAdded->setNextNode(front);
+                front = toBeAdded;
+            }
+            else
+            {
+                LinearNode<Type> * previous = nullptr;
+                LinearNode<Type> * current = front;
+                for (int position = 0; position < index; position++)
+                {
+                    previous = current;
+                    current = current->getNextNode();
+                }
+                previous->setNextNode(toBeAdded);
+                toBeAdded->SetNextNode(current);
+            }
+            this->size++;
+        }
 }
 
 
