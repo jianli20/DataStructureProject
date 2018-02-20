@@ -163,6 +163,20 @@ public:
             delete toBeRemoved;
             return removedData;
         }
+        
+        LinearNode<Type> * LinkedList<Type> getEnd();
+        {
+            return this->end;
+        }
+        
+        LinearNode<Type> * LinkedList<Type> :: getFront()
+        {
+            return this->front;
+        }
+        int LinkedList<Type> :: getSize() cons
+        {
+            return this->size;
+        }
 }
 
 
