@@ -21,11 +21,11 @@ void Controller :: start()
 //    codeTimer.resetTimer();
 //    codeTimer.startTimer();
     
-    ArrayTester myTest;
-    myTest.testArrayUse();
-    myTest.testAdvancedArray();
-  
-    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/jli8189/Documents/C++/DataStructureProject/DataStructureProject/Data/crime.csv");
+//    ArrayTester myTest;
+//    myTest.testArrayUse();
+//    myTest.testAdvancedArray();
+//
+//    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/jli8189/Documents/C++/DataStructureProject/DataStructureProject/Data/crime.csv");
     
 //    for (int index = 200; index < 216; index ++)
 //    {
@@ -34,7 +34,11 @@ void Controller :: start()
 //
 //    codeTimer.stopTimer();
 //    codeTimer.displayInformation();
-    findMaxAndMin();
+ //   findMaxAndMin();
+    
+    LinkedListTester listTest;
+    listTest.testListWithData();
+    listTest.testListBasics();
 }
 
 void Controller :: findMaxAndMin()
