@@ -13,4 +13,7 @@ using namespace std;
 #ifndef LinkedList_hpp
 #define LinkedList_hpp
 
+template <class Type>
+class LinkedList : public List<Type>
+
 #endif /* LinkedList_hpp */
