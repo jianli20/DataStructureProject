@@ -36,7 +36,7 @@ public:
     Type remove(int index);
     // Type setAtIndex(int index, Type item);
     // bool contains(Type item);
- };
+                             };
     
     LinkedList<Type> :: LinkedList()
     {
@@ -102,6 +102,23 @@ public:
                 toBeAdded->SetNextNode(current);
             }
             this->size++;
+        }
+        
+        Type LinkedList<Type> :: getFromIndex(int index)
+        {
+            assert(index >= 0 && index < this->size);
+            Type data;
+            
+            LinearNode<Type> * current = front;
+            
+            for (int position = 0; position < index; position++)
+            {
+                current = current->getNextNode();
+            }
+            
+            data = current->getData();
+            
+            return data;
         }
 }
 
