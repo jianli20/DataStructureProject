@@ -19,6 +19,7 @@ class LinkedListTester
 {
 public:
     void testListBasics();
+    void testListString();
     void testListWithData();
 };
 

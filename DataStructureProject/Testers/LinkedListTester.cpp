@@ -39,6 +39,37 @@ void LinkedListTester :: testListBasics()
     cout << numbers.getEnd()->getData() << " Is at the end of the list and should be 32567" << endl;
 }
 
+void LinkedListTester :: testListString()
+{
+    LinkedList<string> words;
+    words.add("A");
+    cout << words.getFront()->getData() << " Is it at the front of the list and should be A" << endl;
+    cout << words.getEnd()->getData() << " Is at the end of the list and should be A" << endl;
+    
+    words.add("C");
+    cout << words.getFront()->getData() << " Is at the front of the list and should be A" << endl;
+    cout << words.getEnd()->getData() << " Is at the end of the list and should be C"<< endl;
+    
+    words.addAtIndex(1,"B");
+    words.add("D");
+    
+    cout << words.getFront()->getData() << " Is at the front of the list and should be A" << endl;
+    cout << words.getEnd()->getData() << " Is at the end of the list and should be D" << endl;
+    
+    cout<<"This loop should print 4 times"<< endl;
+    for (int index = 0; index < words.getSize(); index++)
+    {
+        cout << words.getFromIndex(index) << endl;
+    }
+    
+  //  words.remove(0);
+    words.add("D");
+    words.addAtIndex(4,"D");
+    
+    cout << words.getFront()->getData() << " Is at the front of the list and should be A" << endl;
+    cout << words.getEnd()->getData() << " Is at the end of the list and should be D" << endl;
+}
+
 void LinkedListTester :: testListWithData()
 {
     Timer listTimer;

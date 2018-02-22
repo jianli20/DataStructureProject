@@ -21,6 +21,7 @@ class Controller
 {
 private:
     void testArray();
+    void testListString();
     void findMaxAndMin();
 public:
     void start();

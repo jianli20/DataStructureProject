@@ -37,8 +37,9 @@ void Controller :: start()
  //   findMaxAndMin();
     
     LinkedListTester listTest;
-    listTest.testListWithData();
     listTest.testListBasics();
+    listTest.testListString();
+    listTest.testListWithData();
 }
 
 void Controller :: findMaxAndMin()
