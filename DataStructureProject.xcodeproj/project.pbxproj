@@ -34,6 +34,9 @@
 		CA1DA473202A443C0077CBAB /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		CA1DA476202A46A30077CBAB /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		CA3518B72024EDF500F6D834 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		CA706DC7203F495600B5949F /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		CA706DCA203F495F00B5949F /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
+		CA706DCD203F496D00B5949F /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		CA9A14C22022434E0047F808 /* DataStructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9A14CC2022438D0047F808 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		CA9A14CE202243990047F808 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
@@ -75,7 +78,12 @@
 		CA1DA470202A41C70077CBAB /* Linear */ = {
 			isa = PBXGroup;
 			children = (
+				CA3518B72024EDF500F6D834 /* Array.hpp */,
 				CAD6562D203CA25B0053A8B9 /* LinkedList.hpp */,
+				CAC5E414202CE1A800B49CBA /* List.hpp */,
+				CA706DC7203F495600B5949F /* Queue.hpp */,
+				CA706DCA203F495F00B5949F /* Stack.hpp */,
+				CA706DCD203F496D00B5949F /* CircularList.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
@@ -102,8 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				CA1DA470202A41C70077CBAB /* Linear */,
-				CA3518B72024EDF500F6D834 /* Array.hpp */,
-				CAC5E414202CE1A800B49CBA /* List.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
