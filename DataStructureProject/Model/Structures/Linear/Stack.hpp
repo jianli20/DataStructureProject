@@ -17,9 +17,9 @@ class Stack : public LinkedList<Type>
 public:
     Stack();
     ~Stack();
-};
+
     //Stack specific methods
-    void push(Type data):
+    void push(Type data);
     Type pop();
     Type peek();
     
@@ -28,7 +28,7 @@ public:
     void addAtIndex(int index, Type data);
     Type getFromIndex(int index);
     Type remove(int index);
-    
+};
     template <class Type>
     Stack<Type> :: Stack() : LinkedList<Type>()
     {
@@ -81,7 +81,7 @@ public:
         assert (this->size > 0);
         Type removed = this->front->getData();
         
-        LinearNode<Type> * removedNode - this->getFront();
+        LinearNode<Type> * removedNode = this->getFront();
         this->front = removedNode->getNextNode();
         delete removedNode;
         
@@ -89,15 +89,16 @@ public:
         
         return removed;
     }
+
     template <class Type>
-    Type StacK<Type> :: remove(int index)
+Type Stack<Type> :: remove(int index)
     {
         assert(index == 0);
         return pop();
     }
     
     template <class Type>
-    Type StacK<Type> :: peek()
+Type Stack<Type> :: peek()
     {
         assert(this->size > 0);
         return this->getFront()->getData();
@@ -109,6 +110,6 @@ public:
         assert(index == 0);
         return peek();
     }
-}
+
 
 #endif /* Stack_hpp */

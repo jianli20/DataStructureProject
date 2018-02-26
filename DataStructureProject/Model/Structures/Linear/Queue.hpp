@@ -50,7 +50,7 @@ Queue<Type> :: ~Queue()
 }
 
 template <class Type>
-void Queue<type> :: enqueue(Type item)
+void Queue<Type> :: enqueue(Type item)
 {
     LinearNode<Type> * added = new LinearNode<Type>(item);
     
@@ -70,7 +70,7 @@ void Queue<type> :: enqueue(Type item)
 template <class Type>
 void Queue<Type> :: addAtIndex(int index, Type item)
 {
-    assert(Index == this->size - 1);
+    assert(index == this->size - 1);
     enqueue(item);
 }
 
@@ -85,7 +85,7 @@ Type Queue<Type> :: dequeue()
 {
     assert(this->size > 0);
     
-    Type returned = this->front->getdata();
+    Type returned = this->front->getData();
     
     LinearNode<Type> * removed = this->front;
     this->front = removed->getNextNode();
