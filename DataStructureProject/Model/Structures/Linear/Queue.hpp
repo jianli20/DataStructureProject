@@ -111,7 +111,7 @@ void Queue<Type> :: clear()
     {
         cout << dequeue() << endl;
     }
-    
+}
     template <class Type>
     Type Queue<Type> :: peek()
     {
@@ -125,6 +125,6 @@ void Queue<Type> :: clear()
         assert(index ==0);
         return peek();
     }
-}
+
 
 #endif /* Queue_hpp */
