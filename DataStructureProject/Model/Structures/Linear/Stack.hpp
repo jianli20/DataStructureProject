@@ -17,7 +17,7 @@ class Stack : public LinkedList<Type>
 public:
     Stack();
     ~Stack();
-    
+};
     //Stack specific methods
     void push(Type data):
     Type pop();
