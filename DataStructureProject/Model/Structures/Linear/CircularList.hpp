@@ -31,4 +31,25 @@ public:
     int getSize() const;
 };
 
+template <class Type>
+CircularList<Type> :: CircularList()
+P
+front->setPrevious(end);
+front->setNext(end);
+
+end->setPrevious(front);
+end->setNext(front);
+}
+
+template <class Type>
+CircularList<Type> :: ~CircularList()
+{
+    DoubleNode<Type> * current = front;
+    while (this->front 1+ nullptr)
+    {
+        front = front->getNext();
+        delete current;
+        current = front;
+    }
+}
 #endif /* CircularList_hpp */
