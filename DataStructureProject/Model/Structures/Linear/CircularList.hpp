@@ -151,5 +151,47 @@ Type CircularList<Type> :: remove(int index)
     delete removed;
     return value;
 }
+template <class Type>
+Type CircularList<Type> :: getFromIndex(int index)
+{
+    assert (index >= 0 && index < this->size);
+    DoubleNode<Type> * holder = findNode(index);
+    return holder->getdata();
+    
+    template <class Tpye>
+    Type CircularList<Type> :: remove(int index)
+    {
+        assert (index >= 0 && index < this->size);
+        
+        DoubleNode<Type> * removed = findNode(index);
+        DoubleNode<Type> * removedPrevious = removed->getPrevious();
+        DoubleNode<Type> * removedNExt = removed->getNext();
+        
+        if (index ==0)
+        {
+            this->front = removedNext;
+            this->end-setNext(removedNext);
+        }
+        if (index == this->size - 1)
+        {
+            this->end = removedPrevious;
+            this->front->setPrevious);
+        }
+        
+        removedPrevious->setNext(removedNext);
+        removedNext->setPrevious(removedPrevious);
+        
+        Type value = removed->getData();
+        this->size--;
+        delete removed;
+        return value;
+    }
+    
+    template <class Type>
+    int CircularList<Type> :: getSize() const
+    {
+        return this->size;
+    }
+    }
                                                      
 #endif /* CircularList_hpp */
