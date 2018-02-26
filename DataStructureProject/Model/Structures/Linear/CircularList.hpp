@@ -62,7 +62,7 @@ DoubleNode<Type>  CircularList<Type> :: findNode(int index)
     if (index < this->size / 2)
     {
         nodeToFind = this->front;
-        for (int position = 0; position < index; position++
+        for (int position = 0; position < index; position++)
              {
                  nodeToFind = nodeToFind->getNext();
              }
@@ -78,7 +78,41 @@ DoubleNode<Type>  CircularList<Type> :: findNode(int index)
              
     return nodeToFind;
 }
-            
-            
+
+template <class Type>
+void CircularList<Type> :: addAtIndex(int index, Type item)
+{
+    assert (index >= 0 && index <= this->size);
+    
+    DoubleNode<Type> * next;
+    DoubleNode<Type> * previous;
+    DoubleNode<Type> * addMe;
+    
+    if (index < this->size)
+    {
+        next = findNode(index);
+        previous = next->getPrevious();
+    }
+    else if (index == this->size)
+    {
+        next = this->front;
+        previous = this->end;
+    }
+    
+    addMe = new DoubleNode<Type>(item, previous, next);
+    
+    if(index ==0)
+    {
+        this->front = addMe;
+    }
+    else if(index ==this->size)
+    {
+        this->end = addMe;
+    }
+    
+    previous->setNext(addme);
+    next->setPrevious(addme);
+    this->size++;
+}
                                                      
 #endif /* CircularList_hpp */
