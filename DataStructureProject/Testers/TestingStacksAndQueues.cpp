@@ -94,11 +94,17 @@ void TestingStacksAndQueues :: stackVersusQueue()
     
     for (int index = 0; index < 10; index++)
     {
+        stackFromQueue.push(queue.dequeue());
+        queueFromStack.enqueue(stack.pop());
+    }
+    for (int index = 0; index < 10; index++)
+    {
         cout << index << endl;
         cout << "Queue result: " << queue.dequeue() << endl;
         cout << "Stack result: " << stack.pop() << endl;
     }
 }
+
 
 void TestingStacksAndQueues :: queueVersusList()
 {
@@ -121,6 +127,7 @@ void TestingStacksAndQueues :: queueVersusList()
     cout << "Here is the in order removal in a queue:" << endl;
     wordQueue.clear();
     cout << "Here is a backwwards order removal in a list:" << endl;
+        
     for(int index = wordList.getSize() - 1; index >= 0; index--)
     {
         cout << wordList.remove(index) << endl;
