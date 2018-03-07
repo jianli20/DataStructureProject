@@ -10,7 +10,7 @@
 
 int RecursionTester :: fib(int number)
 {
-    if(number == 0 || number = 1)
+    if(number == 0 || number == 1)
     {
         cout << "Reached a base case" << endl;
         return 1;

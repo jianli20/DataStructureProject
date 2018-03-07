@@ -36,10 +36,14 @@ void Controller :: start()
 //    codeTimer.displayInformation();
  //   findMaxAndMin();
     
-    LinkedListTester listTest;
-    listTest.testListBasics();
-    listTest.testListString();
-    listTest.testListWithData();
+//    LinkedListTester listTest;
+//    listTest.testListBasics();
+//    listTest.testListString();
+//    listTest.testListWithData();
+    
+    RecursionTester test;
+    test.testRecursionNumbers();
+    test.testRecursionString();
 }
 
 void Controller :: findMaxAndMin()
