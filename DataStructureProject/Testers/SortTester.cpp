@@ -7,6 +7,7 @@
 //
 
 #include "SortTester.hpp"
+#include "../Controller.cpp"
 
 void SortTester :: quickSort(vector<CrimeData> & data, int low, int high)
 {
@@ -60,4 +61,4 @@ quickSort(smaller, 0, smaller.size());
 sortTimer.stopTimer();
 sortTimer.displayInformation();
 cout << "The number of swaps were: " << swapCount << endl;
-}
+

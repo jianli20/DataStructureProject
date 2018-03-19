@@ -13,28 +13,28 @@ using namespace std;
 
 void Controller :: start()
 {
-//    Timer codeTimer;
-//    codeTimer.startTimer();
-//    cout << "wow code" << endl;
-//    codeTimer.stopTimer();
-//    codeTimer.displayInformation();
-//    codeTimer.resetTimer();
-//    codeTimer.startTimer();
+    Timer codeTimer;
+    codeTimer.startTimer();
+    cout << "wow code" << endl;
+    codeTimer.stopTimer();
+    codeTimer.displayInformation();
+    codeTimer.resetTimer();
+    codeTimer.startTimer();
     
 //    ArrayTester myTest;
 //    myTest.testArrayUse();
 //    myTest.testAdvancedArray();
 //
-//    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/jli8189/Documents/C++/DataStructureProject/DataStructureProject/Data/crime.csv");
+    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/jli8189/Documents/C++/DataStructureProject/DataStructureProject/Data/crime.csv");
     
-//    for (int index = 200; index < 216; index ++)
-//    {
-//        cout << index << " is " << myData[index] <<endl;
-//    }
-//
-//    codeTimer.stopTimer();
-//    codeTimer.displayInformation();
- //   findMaxAndMin();
+    for (int index = 200; index < 216; index ++)
+    {
+        cout << index << " is " << myData[index] <<endl;
+    }
+
+    codeTimer.stopTimer();
+    codeTimer.displayInformation();
+    findMaxAndMin();
     
 //    LinkedListTester listTest;
 //    listTest.testListBasics();
