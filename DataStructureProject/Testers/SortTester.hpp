@@ -10,14 +10,21 @@
 #define SortTester_hpp
 
 #include <iostream>
-#include "../Data/CrimeData.cpp"
+#include "/Users/jli8189/Documents/C++/DataStructureProject/DataStructureProject/Controller/FileController.hpp"
+#include "/Users/jli8189/Documents/C++/DataStructureProject/DataStructureProject/Controller/Tools/Timer.hpp"
+
 
 using namespace std;
 
 class SortTester
 {
+private:
+    int swapCount;
+    void quickSort(vector<CrimeData> & data, int low, int high);
+    int partition(vector<CrimeData> & data, int low, int high);
+    void swap(vector<CrimeData> & data, int low, int high);
 public:
-    void testSortDeaths;
+    void testSorts();
 };
 
 #endif /* SortTester_hpp */
