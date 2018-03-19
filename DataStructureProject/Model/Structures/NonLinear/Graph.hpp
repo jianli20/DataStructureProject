@@ -218,7 +218,7 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, 
         }
 }
     
-template <class Type.
+template <class Type>
     int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int vertex)
     {
         assert(vertex < currentGraph.size());
@@ -248,6 +248,38 @@ template <class Type.
             }
         }
     }
+        
+    }
+    template <class Type>
+    int Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex)
+    {
+        assert(vertex < currentGraph.size());
+        bool visited[MAXIMUM];
+    std:set<int> connections;
+    std:set<int>::iterator setIterator;
+    std:queue<int> vertexQueue;
+        
+        std::fill_n(visited,currentGraph.size(),false);
+        visited[vertex] = true;
+        cout<< currentGraph[vertex] << endl;
+        vertexQueue.push(vertex);
+        while (!vertexQueue.empty())
+        {
+            connections = currentGraph.neighbors(vertexQueue.front());
+            vertexQueue.pop();
+            
+            for(setIterator = connections.begin(); setIterator != connections.end(); setIterator++)
+            {
+                if(!visited[*setIterator])
+                {
+                    visited[*setIterator] = true;
+                    cout << currentGraph[*setIterator] << endl;
+                    verexQueue.push(*setIterator);
+                }
+            }
+        }
+    }
+}
 }
 
 #endif /* Graph_hpp */
