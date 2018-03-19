@@ -7,7 +7,7 @@
 //
 
 #include "SortTester.hpp"
-#include "../Controller.cpp"
+#include "../Controller/Tools/Controller.cpp"
 
 void SortTester :: quickSort(vector<CrimeData> & data, int low, int high)
 {
