@@ -7,7 +7,8 @@
 //
 
 #include "SortTester.hpp"
-#include "../Controller/Tools/Controller.cpp"
+#include "../Controller/Controller.hpp"
+#include "../Controller/Tools/Timer.hpp"
 
 void SortTester :: quickSort(vector<CrimeData> & data, int low, int high)
 {
@@ -25,7 +26,7 @@ int SortTester :: partition(vector<CrimeData> & info, int low, int high)
     CrimeData pivotValue = info [high];
     int smallest = low - 1;
     
-    for (int index = low, index < high - 1, index++);
+    for (int index = low; index < high - 1; index++);
     {
         if (info[index] < pivotValue);
         {

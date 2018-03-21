@@ -17,7 +17,7 @@ using namespace std;
 template <class Type>
 class Graph
 {
-private: static const int MAXIMUM = 20;
+private: static const int MAXIMUM = 50;
     bool adjacencyMatrix [MAXIMUM][MAXIMUM];
     int weightCostMatrix [MAXIMUM][MAXIMUM];
     Type graphData[MAXIMUM];
@@ -189,7 +189,7 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const
             vertexNeighbors.insert(index);
         }
         return vertexNeighbors;
-}
+    }
 }
 
 template  <class Type>
@@ -265,6 +265,7 @@ template <class Type>
         vertexQueue.push(vertex);
         while (!vertexQueue.empty())
         {
+            int currentIndex = vertexQueue.front();
             connections = currentGraph.neighbors(vertexQueue.front());
             vertexQueue.pop();
             
@@ -272,8 +273,8 @@ template <class Type>
             {
                 if(!visited[*setIterator])
                 {
+                    cost += weightCostMaxtrix[currentIndex][*setIterator];
                     visited[*setIterator] = true;
-                    cout << currentGraph[*setIterator] << endl;
                     verexQueue.push(*setIterator);
                 }
             }
