@@ -13,13 +13,16 @@ using namespace std;
 
 void Controller :: start()
 {
-    Timer codeTimer;
-    codeTimer.startTimer();
-    cout << "wow code" << endl;
-    codeTimer.stopTimer();
-    codeTimer.displayInformation();
-    codeTimer.resetTimer();
-    codeTimer.startTimer();
+    GraphTester myTest;
+    myTest.testGraphs();
+
+//    Timer codeTimer;
+//    codeTimer.startTimer();
+//    cout << "wow code" << endl;
+//    codeTimer.stopTimer();
+//    codeTimer.displayInformation();
+//    codeTimer.resetTimer();
+//    codeTimer.startTimer();
     
 //    ArrayTester myTest;
 //    myTest.testArrayUse();
@@ -32,18 +35,19 @@ void Controller :: start()
         cout << index << " is " << myData[index] <<endl;
     }
 
-    codeTimer.stopTimer();
-    codeTimer.displayInformation();
-    findMaxAndMin();
+//    codeTimer.stopTimer();
+//    codeTimer.displayInformation();
+ //   findMaxAndMin();
     
 //    LinkedListTester listTest;
 //    listTest.testListBasics();
 //    listTest.testListString();
 //    listTest.testListWithData();
     
-    RecursionTester test;
-    test.testRecursionNumbers();
-    test.testRecursionString();
+//    RecursionTester test;
+//    test.testRecursionNumbers();
+//    test.testRecursionString();
+    
 }
 
 void Controller :: findMaxAndMin()

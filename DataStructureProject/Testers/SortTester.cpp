@@ -7,8 +7,7 @@
 //
 
 #include "SortTester.hpp"
-#include "../Controller/Controller.hpp"
-#include "../Controller/Tools/Timer.hpp"
+
 
 void SortTester :: quickSort(vector<CrimeData> & data, int low, int high)
 {
@@ -26,7 +25,7 @@ int SortTester :: partition(vector<CrimeData> & info, int low, int high)
     CrimeData pivotValue = info [high];
     int smallest = low - 1;
     
-    for (int index = low; index < high - 1; index++);
+    for (int index = low; index < high - 1; index++)
     {
         if (info[index] < pivotValue);
         {
@@ -34,6 +33,8 @@ int SortTester :: partition(vector<CrimeData> & info, int low, int high)
             swap(info, smallest, index);
         }
     }
+    swap(info, smallest + 1, high);
+    return smallest + 1;
 }
 
 void SortTester :: swap(vector<CrimeData> & info, int small, int large)
@@ -46,7 +47,7 @@ void SortTester :: swap(vector<CrimeData> & info, int small, int large)
 
 void SortTester :: testSorts()
 {
-    Timer sortTImer;
+    Timer sortTimer;
     swapCount = 0;
     vector<CrimeData> data = FileController :: readCrimeDataToVector("/Users/jli8189/Documents/C++/DataStructureProject/DataStructureProject/Data/crime.csv");
     
@@ -55,11 +56,11 @@ void SortTester :: testSorts()
     {
         smaller.push_back(data[index]);
     }
+    sortTimer.startTimer();
+    quickSort(smaller, 0, smaller.size());
+    sortTimer.stopTimer();
+    sortTimer.displayInformation();
+    cout << "The number of swaps were: " << swapCount << endl;
 }
 
-sortTimer.startTimer();
-quickSort(smaller, 0, smaller.size());
-sortTimer.stopTimer();
-sortTimer.displayInformation();
-cout << "The number of swaps were: " << swapCount << endl;
 
