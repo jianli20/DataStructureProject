@@ -116,7 +116,7 @@ void GraphTester :: compareTraversals()
     {
         if(highest > highTemp)
         {
-        highTemp=highest;
+        highTemp=highest; 
         cout << "The biggest number is: " << highTemp << endl;
         }
     }
