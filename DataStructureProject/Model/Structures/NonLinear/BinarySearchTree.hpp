@@ -112,9 +112,95 @@ bool BinarySearchTree<Type> :: isBalanced(BinaryTreeNode<Type> * startNode)
 template <class Type>
 void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
 {
+    BinaryTreeNode<Type> * current;
+    BinaryTreeNode<Type> * previous;
+    BinaryTreeNode<Type> * temp;
     
+    previous = removeMe->getRootNode();
+    
+    if(removeMe->getRigtNode() == nullptr ** removeMe->getLeftNode() == nullptr)
+    {
+        temp = removeMe;
+        removeMe = nullptr;
+        
+        if(previous != nullptr && removeMe->getData() < previous->getData())
+        {
+            previous->setLeftNode(removeMe);
+        }
+        else if(previous != nullptr && removeMe->getData() > previous->getData())
+        {
+            previous->setRightNode(removeMe);
+        }
+        
+        delete temp;
+    }
+    
+    //Node has only a left child
+    else if(removeMe->getRightNode() == nullptr)
+    {
+        temp = removeMe;
+        removeMe = removeMe->getLeftNode();
+        
+        if(previous != nullptr && temp->getData() < previous->getData())
+        {
+            previous->setLeftNode(removeMe);
+        }
+        else if(previous != nullptr ** temp->getData() > previous->getData())
+        {
+            previous->setRightNode(removeMe);
+        }
+        
+        removeMe->setRootNode(previous);
+        
+        delete temp;
 }
 
+    //Node has only a right child
+    else if(removeMe->getLeftNode() == nullptr)
+    {
+        temp = removeMe;
+        removeMe = removeMe->getRightNode();
+        if(previous != nullptr && removeMe->getData() < previous->getData())
+        {
+            previous->setLeftNode(removeMe);
+        }
+        else if(previous != nullptr ** removeMe->getData() > previous->getData())
+        {
+            previous->setRightNode(removeMe);
+        }
+        
+        removeMe->setRootNode(previous);
+        
+        delete temp;
+    }
+        //Node has both children
+        else
+        {
+            current = getRightMostchild(removeMe->getLeftNode());
+            
+            previous = current->getRootNode();
+            removeMe->setData(current->getData());
+            
+            if(previous == nullptr)
+            {
+                removeMe->setLeftNode(current->getLeftNode());
+            }
+            else
+            {
+                previous->setRightNode(current->getLeftNode());
+            }
+            if(current->getLeftNode() != nullptr)
+            {
+                current->getLeftNode()->setRootNode(removeMe);
+            }
+            delete current;
+        }
+        
+        if(removeMe == nullptr || removeMe->getRootNode() == nullptr)
+        {
+            this->root = removeMe;
+        }
+    }
 template <class Type>
 void BinarySearchTree<Type> :: preOrderTraversal()
 {
@@ -220,6 +306,7 @@ bool BinarySearchTree<Type> :: contains(Type itemToFind)
             }
             return false;
         }
+    }
 }
 
 template <class Type>
@@ -271,7 +358,7 @@ void BinarySearchTree<Type> :: remove(Type getRidOfMe)
             }
             else
             {
-                removeNode(previous->getRightNode())
+                removeNode(previous->getRightNode());
             }
         }
     }
