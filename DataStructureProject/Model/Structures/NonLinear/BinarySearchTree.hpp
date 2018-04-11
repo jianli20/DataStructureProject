@@ -18,6 +18,7 @@ template <class Type>
 class BinarySearchTree : public Tree<Type>
 {
 protected:
+    void destroyTree(BinaryTreeNode<Type> * node);
     //Recursive Info Helpers
     int calculateSize(BinaryTreeNode<Type>  * startNode);
     int calculateHeight(BinaryTreeNode<Type>  * startNode);
@@ -31,11 +32,11 @@ protected:
     void postOrderTraversal(BinaryTreeNode<Type> * postStart);
     BinaryTreeNode<Type> * getRightMostChild(BinaryTreeNode<Type> * current);
     BinaryTreeNode<Type> * getLeftMostChild(BinaryTreeNode<Type> * current);
+    
 public:
     //Structure
     BinarySearchTree();
     ~BinarySearchTree();
-    void destroyTree(BinaryTreeNode<Type> * node);
     //Informational Methods
     int getSize();
     int getHeight();
