@@ -35,6 +35,7 @@ public:
     //Structure
     BinarySearchTree();
     ~BinarySearchTree();
+    void destroyTree(BinaryTreeNode<Type> * node);
     //Informational Methods
     int getSize();
     int getHeight();
@@ -216,7 +217,18 @@ void BinarySearchTree<Type> :: postOrderTraversal()
 template <class Type>
 BinarySearchTree<Type> :: ~BinarySearchTree()
 {
-    
+    detroyTree(this->root);
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: destroyTree(BinaryTreeNode<Type> * node)
+{
+    if(node != nullptr)
+    {
+        destroyTree(node->getLeftNode());
+        destryTree(node->getRightNode());
+        delete node;
+    }
 }
 
 template <class Type>
