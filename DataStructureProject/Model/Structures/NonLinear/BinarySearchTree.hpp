@@ -338,7 +338,7 @@ void BinarySearchTree<Type> :: remove(Type getRidOfMe)
         {
                 if(current->getData() == getRidOfMe)
                 {
-                    hasBeeNFound = true;
+                    hasBeenFound = true;
                 }
                 else
                 {
