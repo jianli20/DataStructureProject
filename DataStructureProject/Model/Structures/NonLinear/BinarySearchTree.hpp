@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include "Tree.hpp"
+#include "Node.hpp"
 using namespace std;
 
 template <class Type>
@@ -67,7 +68,7 @@ int BinarySearchTree<Type> :: calculateSize(BinaryTreeNode<Type> * startNode)
 {
     if(startNode != nullptr)
     {
-        return calculateSize(startNode->getLeftNode()) + calculateSize(current->getRightNode()) + 1;
+        return calculateSize(startNode->getLeftNode()) + calculateSize(startNode->getRightNode()) + 1;
     }
     return 0;
 }
@@ -194,9 +195,31 @@ void BinarySearchTree<Type> :: insert(Type)
 }
 
 template <class Type>
-bool BinarySearchTree<Type> :: contains(Type)
+bool BinarySearchTree<Type> :: contains(Type itemToFind)
 {
-    
+    BinaryTreeNode<Type> * current = this->root;
+    if(current == nullptr)
+    {
+        return false;
+    }
+    else
+    {
+        while(current != nullptr)
+        {
+            if(itemToFind == current->getData())
+            {
+                return true;
+            }
+            else if (itemToFind < current->getData())
+            {
+                current = current->getLeftNode();
+            }
+            else
+            {
+                current = current->getRightNode();
+            }
+            return false;
+        }
 }
 
 template <class Type>
@@ -228,9 +251,9 @@ void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * inStart)
 {
     if(inStart != nullptr)
     {
-        inOrderTraversal(inStart->getLeftNode());
-        cout << inStart->getdata() << endl;
-        inOrderTraversal(inStart->getRightNode());
+        inOrderTraversal(inStart->getLeft());
+        cout <<inStart->getData() << endl;
+        inOrderTraversal(inStart->getRight());
     }
 }
 
@@ -239,7 +262,7 @@ void BinarySearchTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * preStart
 {
      if(preStart != nullptr)
      {
-     cout << preStart->getdata() << endl;
+     cout << preStart->getData() << endl;
      preOrderTraversal(preStart->getLeftNode());
      preOrderTraversal(preStart->getRightNode());
      }
@@ -269,6 +292,7 @@ void BinarySearchTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * postSta
         cout << postStart->getdata() << endl;
         postOrderTraversal(postStart->getLeftNode());
         postOrderTraversal(postStart->getRightNode());
+    }
 }
 
 template <class Type>
