@@ -220,15 +220,27 @@ BinarySearchTree<Type> :: ~BinarySearchTree()
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNode<Type> * current)
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNode<Type> * startingNode)
 {
+    BinaryTreeNode<Type> * currentNode = startingNode;
+    while (currentNode != nullptr)
+    {
+        currentNode = currentNode->getRightNode();
+    }
     
+    return currentNode;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode<Type> * current)
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode<Type> * startingNode)
 {
+    BinaryTreeNode<Type> * currentNode = startingNode;
+    while (currentNode != nullptr)
+    {
+        currentNode = currentNode->getLeftNode();
+    }
     
+    return currentNode;
 }
 
 template <class Type>
