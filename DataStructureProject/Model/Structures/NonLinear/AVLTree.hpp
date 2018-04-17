@@ -72,4 +72,27 @@ BinaryTreeNode<Type> * AVLTree<Type> :: rightRotation (BinaryTreeNode<Type> * pa
     return changedNode;
 }
 
+ BinaryTreeNode<Tpye> * AVLTree<Type> :: rightLeftRotation (BinaryTreeNode<Type> * parent)
+template<class Type>
+{
+    BinaryTreeNode<Type> * changedNode;
+    changedNode = parent->getRightNode();
+    
+    parent->setRightChild(leftRotation(changedNode));
+    
+    return rightRotation(parent);
+}
+
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: leftRightRotation (BinaryTreeNode<Type> * parent)
+{
+    BinaryTreeNode<Type> * changedNode;
+    changedNode = parent->getLeftNode();
+    
+    parent->setLeftChild(rightRotation(changedNode));
+    
+    return leftRotation(parent);
+}    
+}
+
 #endif /* AVLTree_hpp */
