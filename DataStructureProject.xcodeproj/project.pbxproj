@@ -72,6 +72,7 @@
 		CAEAB73920448F8C002BEB3D /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		CAEAB73B204493A3002BEB3D /* TestingStacksAndQueues.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestingStacksAndQueues.cpp; sourceTree = "<group>"; };
 		CAEAB73C204493A3002BEB3D /* TestingStacksAndQueues.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestingStacksAndQueues.hpp; sourceTree = "<group>"; };
+		CAEC392720866B740078442D /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AVLTree.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +136,7 @@
 				CA21897D2060361A000BE6B1 /* Graph.hpp */,
 				CA345011206AD40800461A90 /* Tree.hpp */,
 				CA39C498206D5E9900DBA949 /* BinarySearchTree.hpp */,
+				CAEC392720866B740078442D /* AVLTree.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
