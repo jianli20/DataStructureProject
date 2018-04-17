@@ -92,7 +92,38 @@ BinaryTreeNode<Type> * AVLTree<Type> :: leftRightRotation (BinaryTreeNode<Type> 
     parent->setLeftChild(rightRotation(changedNode));
     
     return leftRotation(parent);
-}    
+}
+
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Tpye :: balanceSubTree (BinaryTreeNode<Type> * parent)
+{
+    int balanceFactor = heightDifference(parent);
+    
+    if(balanceFactor > 1)
+    {
+        if(heightDifference(parent->getLeftNode()) > 0)
+        {
+            parent = leftRotation(parent);
+        }
+        else
+        {
+            parent = leftRightRotation(parent);
+        }
+    }
+    else if(balanceFactor < -1)
+    {
+        if(heightDifference(parent->getRightNode()) > 0)
+        {
+            parent = rightLeftRotation(parent);
+        }
+        else
+        {
+            parent = rightRotation(parent);
+        }
+    }
+    
+    return parent;
+}
 }
 
 #endif /* AVLTree_hpp */
