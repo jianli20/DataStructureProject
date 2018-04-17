@@ -33,4 +33,17 @@ public:
     void remove(Type value);
 };
 
+/*
+ A negative value means the right is greater than the left
+ */
+template <class Type>
+int AVLTree<Type> :: hieghtDifference(BinaryTreeNode<Type> * node)
+{
+    int balance;
+    int leftHeight = this->calculateHeight(node->getLeftNode());
+    int rightHeight = this->calculateHeight(node->getRightNode());
+    balance = leftHeight - rightHeight;
+    return balance;
+}
+
 #endif /* AVLTree_hpp */
