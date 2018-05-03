@@ -34,6 +34,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA17179220939FD000AC05DD /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashNode.hpp; sourceTree = "<group>"; };
+		CA1717952093A17700AC05DD /* Hashtable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hashtable.hpp; sourceTree = "<group>"; };
 		CA1DA46D202A33B60077CBAB /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		CA1DA46E202A33B60077CBAB /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		CA1DA473202A443C0077CBAB /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				CA1DA476202A46A30077CBAB /* LinearNode.hpp */,
 				CAEAB73920448F8C002BEB3D /* DoubleNode.hpp */,
 				CA34500B206ABF2D00461A90 /* BinaryTreeNode.hpp */,
+				CA17179220939FD000AC05DD /* HashNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 				CA345011206AD40800461A90 /* Tree.hpp */,
 				CA39C498206D5E9900DBA949 /* BinarySearchTree.hpp */,
 				CAEC392720866B740078442D /* AVLTree.hpp */,
+				CA1717952093A17700AC05DD /* Hashtable.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";

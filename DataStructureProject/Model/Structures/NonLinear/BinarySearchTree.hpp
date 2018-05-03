@@ -312,7 +312,7 @@ bool BinarySearchTree<Type> :: contains(Type itemToFind)
 {
     BinaryTreeNode<Type> * current = this->root;
     if(current == nullptr)
-    {
+    {   
         return false;
     }
     else
